@@ -1,13 +1,14 @@
-CREATE DATABASE DQlab_SQL;
 use dqlab_sql;
+
 CREATE TABLE ms_produk ( 
-		no_urut INT,
+	no_urut INT,
         kode_produk varchar(10) NOT NULL,
         nama_produk varchar(35) NOT NULL,
-		harga INT
+	harga INT
 );
+
 INSERT INTO ms_produk VALUES 
-		( 1,
+	( 1,
         'prod-01',
         'Kotak Pensil DQLab',
         62500),
