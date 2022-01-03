@@ -1,12 +1,14 @@
 use dqlab_sql;
+
 CREATE TABLE ms_pelanggan ( 
-		no_urut INT,
+	no_urut INT,
         kode_pelanggan varchar(13) NOT NULL,
         nama_customer varchar(25) NOT NULL,
-		alamat varchar(45) NOT NULL
+	alamat varchar(45) NOT NULL
 );
+
 INSERT INTO ms_pelanggan VALUES 
-		( 1,
+	( 1,
         'dqlabcust01',
         'Eva Novianti, S.H.',
         'Vila Sempilan, No. 67 - Kota B'),
@@ -46,11 +48,11 @@ INSERT INTO ms_pelanggan VALUES
         'dqlabcust10',
         'Djoko Wardoyo, Drs.',
         'Vila Bukit Sagitarius, Blok A1 No. 1'),
-		( 11,
+	( 11,
         'dqlabcust03',
         'Unang Handoko',
         'Vila Sempilan, No. 1 - Kota B'),
-         ( 12,
+        ( 12,
         'dqlabcust05',
         'Tommy Sinaga',
         'Vila Permata Intan Berkilau, Blok A1/2');
