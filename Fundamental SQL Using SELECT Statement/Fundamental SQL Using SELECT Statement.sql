@@ -40,17 +40,19 @@ SELECT * FROM ms_produk WHERE nama_produk= 'TAS Travel Organizer DQLab';
 SELECT * FROM ms_produk 
 	WHERE nama_produk = 'Gantungan Kunci DQLab' 
 		OR nama_produk= 'Tas Travel Organizer DQLab' 
-        OR nama_produk = 'Flashdisk DQLab 64 GB';
+      		OR nama_produk = 'Flashdisk DQLab 64 GB';
 
 /*Filter untuk Angka*/
 SELECT * FROM ms_produk WHERE harga > 50000;
 
 /*Menggunakan Operand AND*/
-SELECT * FROM ms_produk WHERE nama_produk= 'Gantungan Kunci DQLab' AND harga < 50000;				
+SELECT * FROM ms_produk 
+	WHERE nama_produk= 'Gantungan Kunci DQLab' 
+		AND harga < 50000;				
 
 /*Proyek dari Cabang A*/
 SELECT kode_pelanggan, 
-		nama_produk, 
+	nama_produk, 
         qty, 
         harga, 
         qty * harga AS total 
